@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center>
+    <h3>Fill this up to get to know yourself better!</h3>
+
+    <forms> <!--Forms-->
+        <label for="fname"> First name: </label><!--Label Element = ID of input-->
+        <input type="text" id="fname" name="fname" value=""> <!--Text Input-->
+        <br><br>
+        <label for="pword">Password:</label><!--Password Input-->
+        <input type="password"id="pword" name="pword">
+        <br><br>
+        <label for="quantity"> How would you rate yourself overall? (between 1 and 10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><!--Number Input, Set Restrictions-->
+        <br><br>
+        <label for="est"> Estimate how sure you are of your dreams(between 0 and 10): </label>
+        <input type="range" id="est" name="est" min="0" max="10"> <!--Range Input-->
+        <br><br>
+        <h4>What are your subject interests?</h4>
+        <input type="checkbox" id="subject1" name="subject1" value="Reading and Literature"><!--Checkbox Input-->
+        <label for="subject1"> Reading and Literature</label><br>
+        <input type="checkbox" id="subject2" name="subject2" value="Mathematics and Sciences">
+        <label for="subject2"> Mathematics and Sciences</label><br>
+        <input type="checkbox" id="subject3" name="subject3" value="Arts and Crafts">
+        <label for="subject3"> Arts and Crafts</label><br>
+        <input type="checkbox" id="subject4" name="subject4" value="Sports">
+        <label for="subject3"> Sports</label>
+        <br>
+        <h4>What is your gender?</h4>
+        <input type="radio" id="girls" name="genders" value="Female"><!--Readio Button Input-->
+        <label for="girls">Female</label><br>
+        <input type="radio" id="boys" name="genders" value="Male">
+        <label for="boys">Male</label><br>
+        <input type="radio" id="other" name="genders" value="Others">
+        <label for="other">Others</label><br>
+        <br>
+        <label for="field">Choose a field of work/careers:</label><!--Dropdown List-->
+        <select id="field" name="work">
+        <option value="Administrative">Administrative</option>
+        <option value="Art">Art</option>
+        <option value="Communication and Media">Communication and Media</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Construction">Construction</option>
+        <option value="Cosmetology">Cosmetology</option>
+        <option value="Dentistry">Dentistry</option>
+        <option value="Education">Education</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Business">Business</option>
+        <option value="Green Jobs">Green Jobs</option>
+        <option value="Health and Therapy">Health and Therapy</option>
+        <option value="International Relations">International Relations</option>
+        <option value="Legal">Legal</option>
+        <option value="Management">Management</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Science">Science</option>
+        <option value="Social Change">Social Change</option>
+        <option value="Social Science">Social Science</option>
+        <option value="Sports Industry">Sports Industry</option>
+        <option value="TV News">TV News</option>
+        <option value="Video Game">Video Game</option>
+        <option value="Web">Web</option>
+        <option value="Health Technologist/Technicians" selected>Health Technologist/Technicians</option>
+        </select>
+        <br><br>
+        <label for="your_thoughts">Tell us your thoughts about this page:</label>
+        <br><textarea id=your_thoughts name="message" rows="10" cols="30"></textarea><!--Text Area-->
+        <br><br>
+
+        <input type="submit" value="Submit"><!--Submit Button-->
+    </forms>
+</center>
+</body>
+</html>
