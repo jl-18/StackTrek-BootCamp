@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Before Christmas</title>
+    <style>
+        * {
+            padding: 0;
+            margin:0;
+        }
+       
+        .image {
+            height: auto;
+            width: 100%;
+            max-width: 400px;
+          
+        }
+        img {
+            padding-top: 20px;
+            padding-left: 40vw;
+            padding-right: 5vw;
+            width: 20vw; 
+            height: 35vw;
+
+        }
+       
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 4vw;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+        .text {
+            padding-top: 30px;
+
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="image"><img src="tree.jpg"></div>
+    <p class="text">Christmas</p>
+    <p id="days"></p>
+    <script>
+    
+    today=new Date();
+    var cmas=new Date(today.getFullYear(), 11, 25);
+    if (today.getMonth()==11 && today.getDate()>25) {
+        cmas.setFullYear(cmas.getFullYear()+1); 
+    }  
+    var one_day=1000*60*60*24;
+    days = ("In" + " " + Math.ceil((cmas.getTime()-today.getTime())/(one_day))+ " " +
+    "days");
+
+    document.getElementById("days").innerHTML = days;
+
+
+    </script>
+    
+</body>
+</html>
