@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            padding: 25%;
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            align-items: center;
+       }
+        ul {
+            list-style: none;
+            font-size: 30px;
+            width: 50%; 
+            margin-top: 20px;  
+            margin-left: 30vw;
+        }
+        #car ul {
+            border: 3px solid black;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: fit-content;
+            text-align: left;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <img src="car.jpg" alt="Bugatti Divo Image">
+        <div id="car">
+            <ul>
+                <li>Manufacturer: <span id="manufacturer">&lt;Manufacturer&gt;</span></li>
+                <li>Make and Model: <span id="model">&lt;Make and Model&gt;</span></li>
+                <li>Engine: <span id="engine">&lt;Engine&gt;</span></li>
+                <li>Body Type: <span id="bodyType">&lt;Body Type&gt;</span></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let manufacturer = "Bugatti Automobiles S.A.S"
+        let model = "Bugatti Divo"
+        let engine = "8.0-liter W16"
+        let bodyType = "Coupe"
+
+        document.getElementById("manufacturer").innerHTML = manufacturer;
+        document.getElementById("model").innerHTML = model;
+        document.getElementById("engine").innerHTML = engine;
+        document.getElementById("bodyType").innerHTML = bodyType;
+
+    </script>
+</body>
+</html>
